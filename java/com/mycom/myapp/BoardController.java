@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.mycom.myapp.bean.BoardVO;
 import com.mycom.myapp.dao.BoardDAO;
+
 @Controller
 public class BoardController {
 	
