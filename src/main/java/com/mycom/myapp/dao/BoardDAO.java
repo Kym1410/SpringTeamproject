@@ -39,7 +39,7 @@ public class BoardDAO {
 		}
 		
 		public int updateBoard(BoardVO vo) {
-			return template.update(BOARD_UPDATE,new Object[] {vo.getCategory(),vo.getWriter(), vo.getGender(), vo.getBirthDate(), vo.getContent(), vo.getPhone()});
+			return template.update(BOARD_UPDATE,new Object[] {vo.getCategory(),vo.getWriter(), vo.getGender(), vo.getBirthDate(), vo.getContent(), vo.getPhone(), vo.getId()});
 		}
 		
 		public BoardVO getBoard(int id) {

@@ -40,7 +40,7 @@ public class BoardController {
 		return "editform";
 	}
 	
-	@RequestMapping(value="/editok", method = RequestMethod.POST)
+	@RequestMapping(value="/board/editok", method = RequestMethod.POST)
 	public String editPostOK(BoardVO vo) {
 		int i = boardDAO.updateBoard(vo);
 		if(i==0) System.out.println("데이터 수정 실패");
